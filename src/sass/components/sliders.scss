@@ -1,0 +1,81 @@
+.slider-item__img {
+  @extend %img;
+  width: 300px;
+  @media (min-width: 1200px) {
+    width: 800px;
+  }
+}
+
+.slider {
+  width: 320px;
+  margin: 0 auto;
+  @media (min-width: 1200px) {
+    width: 900px;
+    padding-top: 30px;
+    position: relative;
+  }
+}
+
+.services {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  width: 300px;
+  height: 260px;
+  background-color: $services-background-mobile-color;
+  color: $second-font-color;
+  @media (min-width: 1200px) {
+    position: absolute;
+    top: 46%;
+    left: 22%;
+    background-color: $services-background-screen-color;
+    height: 240px;
+  }
+}
+
+.services-paragraph {
+  @extend %paragraph;
+  text-transform: uppercase;
+  font-size: $slider-par-font-size;
+  margin-bottom: 16px;
+}
+
+.services-title {
+  @extend %paragraph;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.services-subtitle {
+  @extend %paragraph;
+  text-transform: uppercase;
+  font-style: oblique;
+  font-family: $second-font-stack;
+  margin-bottom: 20px;
+}
+.services-descr {
+  @extend %paragraph;
+  text-transform: uppercase;
+  font-size: $second-font-size;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  @media (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
+
+.services-btn {
+  @extend %button;
+  background-color: $services-background-mobile-color;
+  font-size: $slider-par-font-size;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 14px 48px;
+  @media (min-width: 1200px) {
+    background-color: $services-background-screen-btn-color;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-section {
+    margin-bottom: 40px;
+  }
+}

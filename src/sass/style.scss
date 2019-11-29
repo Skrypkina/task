@@ -1,0 +1,12 @@
+@import "helpers/variables.scss";
+@import "helpers/placeholders.scss";
+@import "helpers/mixins.scss";
+@import "normalize.scss";
+
+// components
+@import "./slickfix.scss";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "components/base.scss";
+@import "components/sliders.scss";
+@import "components/list.scss";

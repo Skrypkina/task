@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $main-font-stack;
+  font-size: $main-font-size;
+  color: $main-font-color;
+}
+main {
+  margin-bottom: 30px;
+  font-family: $main-font-stack;
+  font-size: $main-font-size;
+  color: $main-font-color;
+}
