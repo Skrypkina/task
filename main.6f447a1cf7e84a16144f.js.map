@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./index.js"],"names":["$","slick","autoplay"],"mappings":"2FAAA,oDAKAA,IAAE,WAAWC,MAAM,CACjBC,UAAU,K","file":"main.6f447a1cf7e84a16144f.js","sourcesContent":["import $ from \"jquery\";\nimport \"slick-carousel\";\n\nimport \"./sass/style.scss\";\n\n$(\".slider\").slick({\n  autoplay: true\n});\n\n// $(\".slider\").slick();\n"],"sourceRoot":""}
