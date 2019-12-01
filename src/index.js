@@ -7,22 +7,14 @@ $(".slider").slick({
   autoplay: true
 });
 
-// $(".slider").slick();
-// const x = document.getElementsByClassName("fs-entry-container");
-
-// console.log(window.innerWidth);
-
-// const z = document.getElementsByClassName("fs-timeline-entry");
-// console.log(z);
-
 // progress bar section
 $(document).ready(function() {
-  var $slider = $(".slider");
-  var $progressBar = $(".progress");
-  var $progressBarLabel = $(".slider__label");
+  const $slider = $(".slider");
+  const $progressBar = $(".progress");
+  const $progressBarLabel = $(".slider__label");
 
   $slider.on("beforeChange", function(event, slick, currentSlide, nextSlide) {
-    var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+    const calc = (nextSlide / (slick.slideCount - 1)) * 100;
 
     $progressBar
       .css("background-size", calc + "% 100%")
@@ -75,7 +67,7 @@ function handleEmailFormSubmit(evt) {
         text.value = "Input error!";
       } else {
         backdrop.classList.add("is-visible");
-        text.value = `${mail} successfully added`;
+        text.value = `${mail} successfully registered`;
       }
     })
     .catch(error => {
