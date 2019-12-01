@@ -1,3 +1,3 @@
 # task
 
-follow the link <a href="https://skrypkina.github.io/task/" alt="project">
+<p><a href="https://skrypkina.github.io/task/" rel="project">Project link</a><p/>
