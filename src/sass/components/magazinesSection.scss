@@ -1,0 +1,158 @@
+.magazines-title,
+.magazines-article__title {
+  @extend %paragraph;
+  text-transform: uppercase;
+  color: $main-title-color;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.magazines {
+  @extend %list;
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  margin-bottom: 50px;
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: unset;
+    -webkit-overflow-scrolling: unset;
+    scroll-behavior: unset;
+    margin-bottom: 60px;
+  }
+}
+.magazines-item {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100px;
+  line-height: 100px;
+  display: block;
+  text-align: center;
+  @media (min-width: 1200px) {
+    width: 180px;
+    flex-shrink: unset;
+    border: 1px solid #eee;
+  }
+}
+.magazines::-webkit-scrollbar {
+  display: none;
+}
+
+.magazines-item__vogue {
+  text-transform: uppercase;
+  font-size: $magazines-vog-font-size;
+  font-weight: bold;
+  font-style: italic;
+  color: $services-background-mobile-color;
+}
+.magazines-item__beauticate {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.magazines-item__goodwekend {
+  font-size: $magazines-goodwek-font-size;
+  font-weight: 600;
+  font-style: oblique;
+}
+.magazines-item__harrods {
+  font-size: $magazines-harrods-font-size;
+  text-transform: uppercase;
+  font-family: $paragraph-font-stack;
+}
+
+.magazines-item__mobileBorder {
+  width: 220px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 100px;
+  border: 1px solid #eee;
+  @media (min-width: 1200px) {
+    border: unset;
+    display: unset;
+  }
+}
+
+// paragraph
+
+.magazines-article__paragraph {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  @media (min-width: 1200px) {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .magazines-article {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    margin-bottom: 36px;
+  }
+}
+// services
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+  @extend %list;
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: unset;
+  }
+}
+.services-list__item {
+  width: 280px;
+  height: 60px;
+  background-color: #eee;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: $second-font-size;
+  letter-spacing: 0.5px;
+  position: relative;
+  &::before {
+    @include pseudo;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 4%;
+    top: 26%;
+  }
+  &--pinterest::before {
+    background-image: url("../images/icons/icon-pinterest.svg");
+  }
+  &--twitter::before {
+    background-image: url("../images/icons/icon-twitter.svg");
+  }
+  &--instagram::before {
+    background-image: url("../images/icons/icon-instagram.svg");
+  }
+  &--facebook::before {
+    background-image: url("../images/icons/icon-facebook.svg");
+  }
+}

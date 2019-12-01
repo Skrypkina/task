@@ -10,7 +10,7 @@
 
 .list-item__img {
   width: 300px;
-  margin: 0 auto;
+  @extend %img;
   margin-bottom: 30px;
   @media (min-width: 1200px) {
     width: 340px;
@@ -28,10 +28,8 @@
 }
 .list-item__title {
   text-align: center;
-  text-transform: uppercase;
+  @extend %title;
   @extend %paragraph;
-  letter-spacing: 1px;
-  color: $main-title-color;
   margin-bottom: 14px;
   @media (min-width: 1200px) {
     text-align: unset;
@@ -39,11 +37,82 @@
 }
 .list-item__paragraph {
   @extend %paragraph;
+  @extend %list-paragraph;
   text-align: center;
-  letter-spacing: 1px;
-  line-height: 20px;
-  font-size: $second-font-size;
   @media (min-width: 1200px) {
     text-align: unset;
   }
+}
+
+// orderList
+
+.orderList-item__img {
+  @extend %img;
+  width: 240px;
+  margin-bottom: 16px;
+}
+
+.orderList-item-container {
+  width: 260px;
+  margin: 0 auto;
+  height: 120px;
+  padding: 5px;
+}
+.orderList-item__title--span {
+  opacity: 0;
+  @media (min-width: 1200px) {
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.orderList-item__link {
+  @extend %link;
+}
+
+.orderList-item__title {
+  @extend %paragraph;
+  @extend %title;
+  margin-bottom: 16px;
+}
+.orderList-item__paragraph {
+  @extend %paragraph;
+  @extend %list-paragraph;
+}
+
+// orderList slider
+
+.orderList {
+  @extend %list;
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: unset;
+    -webkit-overflow-scrolling: unset;
+    scroll-behavior: unset;
+  }
+}
+.orderList-item {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+  @media (min-width: 1200px) {
+    width: unset;
+    flex-shrink: unset;
+  }
+}
+
+.orderList::-webkit-scrollbar {
+  display: none;
 }
