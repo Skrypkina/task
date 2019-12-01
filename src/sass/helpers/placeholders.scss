@@ -1,8 +1,8 @@
-//   %link {
-//     display: block;
-//     text-decoration-line: none;
-//     cursor: pointer;
-//   }
+%link {
+  display: block;
+  text-decoration-line: none;
+  cursor: pointer;
+}
 
 %list {
   list-style: none;
@@ -26,4 +26,14 @@
 %img {
   display: block;
   margin: 0 auto;
+}
+%list-paragraph {
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: $second-font-size;
+}
+%title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $main-title-color;
 }

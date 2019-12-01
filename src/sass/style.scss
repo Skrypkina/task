@@ -3,10 +3,15 @@
 @import "helpers/mixins.scss";
 @import "normalize.scss";
 
-// components
+// slick-carousel slider
 @import "./slickfix.scss";
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+// components
 @import "components/base.scss";
 @import "components/sliders.scss";
 @import "components/list.scss";
+@import "components/instagramSection.scss";
+@import "components/magazinesSection.scss";
+@import "components/footer.scss";
