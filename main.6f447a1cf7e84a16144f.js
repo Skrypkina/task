@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{QfWi:function(i,n,o){"use strict";o.r(n);var s=o("qIEf"),t=o.n(s);o("IUJq"),o("Sm8t");t()(".slider").slick({autoplay:!0})},Sm8t:function(i,n,o){}},[["QfWi",1,2]]]);
-//# sourceMappingURL=main.6f447a1cf7e84a16144f.js.map
